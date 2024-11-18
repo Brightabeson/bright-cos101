@@ -1,0 +1,52 @@
+def a():
+    num1 = int(input('enter your first number:'))
+    num2 = int(input('enter your second number:'))
+    num3 = int(input('enter your third number:'))
+    sum_of_numbers=(num1+num2+num3)
+    print(sum_of_numbers)
+
+# to find the speed of an object
+def b():
+    distance= int(input('enter your distance:'))
+    time = int('enter your time:')
+    speed: float = (distance/time)
+    print (speed)
+
+#TO DIFFERENCE BETWEEN TWO NUMBERS
+def c():
+    num1=int(input('enter your first number'))
+    num2=int(input('enter your second number:'))
+    difference : int =(num1 - num2)
+    print(difference)
+
+#to find the product of two number
+def d():
+    num1 :int =int(input('enter your first number'))
+    num2= int(input('enter your second number:'))
+    product = (num1*num2)
+    print(product)
+
+#TO find the average of three numbers
+def e():
+    numb1 =int(input('enter your first number:'))
+    numb2 =int(input('enter your second number:'))
+    numb3 =int(input('enter the third number '))
+    average = (numb1*numb2*numb3)/3
+    print(average)
+
+def main():
+    user_choice = input('what operation would you like to perform from a-e')
+    if user_choice== "a":
+        a()
+    elif user_choice =="b":
+        b()
+    elif user_choice =="b":
+        c()
+    elif user_choice =="b":
+        d()
+    elif user_choice =="b":
+        e()
+    else:
+        print("invalid_input")
+if __name__  ==  '__main__':
+    main()
